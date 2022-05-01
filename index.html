@@ -8,6 +8,9 @@
             <h1>Head to head: <code>ggplot2</code> v. <code>r2d3</code></h1>
             <div id="intro">
                 <p>
+                    Comparing two ways to make a scatterplot in R: <code>ggplot2</code> and <code>D3.js</code> (via <code>r2d3</code>).
+                </p>
+                <p>
                     Consider a dataset describing the cooking times of potroasts under various conditions.
                     Suppose that we want to plot these cooking times, using X-axis positioning, shape, and color to represent the different conditions.
                 </p>
@@ -16,16 +19,27 @@
                 <h2>A <code>ggplot2</code> example</h2>
                 <p>
                     Made with <a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a>.
+                    The <code>R</code> code to create this scatterplot can be found at <a href="https://github.com/MTurner0/ggplot2-vs-r2d3/blob/master/comparison.R">this link</a>.
                 </p>
-                <img src="ggplot-variant.png"/>
+                <img src="ggplot-variant.png" alt="Scatterplot for length of time needed to cook potroasts. X-axis gives cooking temperature (in degrees Fahrenheit), Y-axis gives cooking time (in minutes). Points are colored by the day a batch of potroasts were cooked, and point shape indicates whether the pan was covered, uncovered, or had a rack in it."/>
             </div>
             <div id="an-r2d3-example">
                 <h2>An <code>r2d3</code> example</h2>
                 <p>
                     Made with the <a href="https://rstudio.github.io/r2d3/" class="external-link">r2d3</a> interface between <code>R</code> and <code>D3.js</code>.
+                    The <code>js</code> code to create this scatterplot can be found at <a href="https://github.com/MTurner0/ggplot2-vs-r2d3/blob/master/scatter.js">this link</a>.
                 </p>
-                <img src="d3-variant-plot.png"/>
-                <img src="d3-variant-legend.png"/>
+                <img src="d3-variant-plot.png" alt="Scatterplot for length of time needed to cook potroasts. X-axis gives cooking temperature (in degrees Fahrenheit), Y-axis gives cooking time (in minutes). Points are colored by the day a batch of potroasts were cooked, and point shape indicates whether the pan was covered, uncovered, or had a rack in it."/>
+                <p>
+                    While <code>ggplot2</code> automatically generates a legend for the first scatterplot, the legend for the <code>D3</code> scatterplot was made "by hand."
+                    The <code>js</code> code to create this legend can be found at <a href="https://github.com/MTurner0/ggplot2-vs-r2d3/blob/master/legend.js">this link</a>.
+                </p>
+                <img src="d3-variant-legend.png" alt="Left column matches point colors to days; right column matches point shapes to pan adjustments."/>
+            </div>
+            <div id="return-2-sender">
+                <p>
+                    <a href="https://mturner0.github.io">Back to my homepage?</a>
+                </p>
             </div>
         </body>
     </html>
